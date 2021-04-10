@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 1vw;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-size: cover;
+  color: rgb(53, 49, 49);
+  background:lightgray;
+  position: relative;
+}
+
+.btn {
+  border: 0;
+  background: url("https://www.pngarts.com/files/7/Update-Button-PNG-Image.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+  margin: 10px;
+}
+.btn:hover {
+  filter: sepia(100%);
+  cursor: pointer;
+}
+.btn:active,
+.btn:focus {
+  outline: 0;
+}
+.btn:active{
+  transform: scale(1.02)
+}
+
+.btn-background {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 60px;
+  height: 60px;
+}
+
+.time {
+  font-size: 8rem;
+  background:rgba(255, 255, 255, 0.4);
+  border-radius: 1em;
+  padding: 0 1em;
+  width: 80%;
+}
+
+.date {
+  font-size: 4rem;
+  background:rgba(255, 255, 255, 0.4);
+  border-radius: 1em;
+  padding: 0 1em;
+}
+
+h1 {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  background:rgba(255, 255, 255, 0.4);
+  border-radius: 1em;
+  padding: 0 1em;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  font-size: 4rem;
+  opacity: 0.8;
+  background:rgba(255, 255, 255, 0.4);
+  border-radius: 1em;
+  padding: 0 1em;
+}
+
+.quote {
+  color: black;
+  font: 1.2rem Georgia, serif;
+  background:rgba(255, 255, 255, 0.4);
+  padding: 1em;
+  border-radius: 1em;
+  position: relative;
+  width: 80%;
+}
+
+.quote figcaption,
+.quote blockquote {
+  margin: 1em;
+}
+.quote figcaption {
+  text-align: right;
+}
+
+.btn-quote {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 1.5vw;
+  }
+
+  .time {
+    width: 90%;
+  }
+
+  .btn-background {
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .btn-quote {
+    left: 10px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .time {
+    font-size: 6rem;
+  }
+
+  .quote {
+    font: 2rem Georgia, serif;
+    width: 90%;
+  }
+}
+
+@media (max-width: 470px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+  
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  .quote {
+    font: 3.2rem Georgia, serif;
+  }
+}

@@ -1,0 +1,60 @@
+body {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.panels {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-top: 50px;
+    text-align: left;
+    font-size: 2vw;
+    font-weight: 10px;
+    border: 2px solid black;
+    background: rgb(36, 223, 230);
+}
+
+.rainbow {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 50%;
+}
+
+.rainbow p {
+    font-weight: 10px;
+}
+
+.rainbow-button {
+    height: 27px;
+    background: linear-gradient(to right, orange, yellow, green, cyan, blue, violet);
+    font-weight: 700;
+}
+
+.brush-size-dynamic {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 60%;
+}
+
+.brush-size-dynamic-button {
+    height: 30px;
+    background: yellow;
+    font-weight: 700;
+}
+
+.color-button--active,
+.size-button--active {
+    outline: 2px solid black;
+}

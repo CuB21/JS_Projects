@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Scoped CSS Variables and JS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="controls">
+    <h2 class='hl'>Фотофильтры</h2>
+
+    <label for="base">
+      Цвет рамки
+      <input id="base" type="color" name="base" value="#ffc600">
+    </label>
+
+    <label for="spacing-foto">
+      Размер фото:
+      <input id="spacing-foto" type="range" name="spacing-foto" min="100" max="800" value="400" data-sizing="px">
+    </label>
+
+    <label for="spacing-frame">
+      Размер рамки:
+      <input id="spacing-frame" type="range" name="spacing-frame" min="0" max="20" value="10" data-sizing="px">
+    </label>
+
+    <label for="blur">
+      Размытие:
+      <input id="blur" type="range" name="blur" min="0" max="25" value="0" data-sizing="px">
+    </label>
+
+    <label for="invert">
+      Инверсия:
+      <input id="invert" type="range" name="invert" min="0" max="100" value="0" data-sizing="%">
+    </label>
+
+    <label for="sepia">
+      Сепия:
+      <input id="sepia" type="range" name="sepia" min="0" max="100" value="0" data-sizing="%">
+    </label>
+
+    <label for="saturate">
+      Насыщенность:
+      <input id="saturate" type="range" name="saturate" min="0" max="100" value="100" data-sizing="%">
+    </label>
+
+    <label for="hue-rotate">
+      Оттенок:
+      <input id="hue-rotate" type="range" name="hue-rotate" min="0" max="360" value="0" data-sizing="deg">
+    </label>
+  </div>
+
+  <div class="images">
+    <img src="https://source.unsplash.com/random/800x500">
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

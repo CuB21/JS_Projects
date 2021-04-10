@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Canvas</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="panels">
+        <h2>Инструменты</h2>
+
+        <label for="color">
+            Цвет
+            <input id="color" type="color" name="color" value="#ffc600" class="color-button ">
+        </label>
+
+        <div class="rainbow">
+            <p>Цвет</p>
+            <button class="rainbow-button color-button color-button--active">Радужный</button>
+        </div>
+
+        <label for="brush-size">
+            Размер кисти:
+            <input id="brush-size" type="range" name="brush-size" min="10" max="100" value="40" data-sizing="px"
+                class="size-button ">
+        </label>
+
+        <div class="brush-size-dynamic">
+            <p>Кисть:</p>
+            <button class="brush-size-dynamic-button size-button size-button--active">Динамическая</button>
+        </div>
+
+        <button class="brush-size-dynamic-button clear-button">Очистка</button>
+
+    </div>
+
+    <div class="canvas">
+        <canvas id="draw"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
